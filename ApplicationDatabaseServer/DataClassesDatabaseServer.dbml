@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DatabaseServer" Class="DataClassesDatabaseServerDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DatabaseServer.mdf;Integrated Security=True" SettingsObjectName="ApplicationDatabaseServer.Properties.Settings" SettingsPropertyName="DatabaseServerConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbUsers" Member="tbUsers">
+    <Type Name="tbUser">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
